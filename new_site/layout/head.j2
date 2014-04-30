@@ -44,6 +44,9 @@
 </script-->
 <script type="text/javascript">
   $(document).ready(function(){
+    $('.banner h2').mouseenter(function(){
+      $(this).parent('div').find('a').addClass('hover');
+    })
     $('.banner h2').click(function(){
         document.location.href = $(this).parent('div').find('a').attr('href');
       })

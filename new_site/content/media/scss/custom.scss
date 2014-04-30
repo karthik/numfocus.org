@@ -331,7 +331,7 @@ section.home {
 					display: block;
 					height: 100%;
 					width: 100%;
-					&:hover {
+					&:hover, &.hover {
 						&:after {
 							content: " ";
 							display: block;
@@ -346,7 +346,7 @@ section.home {
 					height: 270px;
 					width: 700px;
 					background: transparent url('/media/img/banner-projects-bg.png') 0 0 no-repeat;
-					a:hover {
+					a:hover, a.hover {
 						&:after {
 							width: 700px;
 						}
