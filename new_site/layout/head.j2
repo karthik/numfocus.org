@@ -32,15 +32,21 @@
 
     </script>
 {% endif %} 
-<script type="text/javascript">
+<!--script type="text/javascript">
 	$(function() {
 		$('.nav li').each(function(){
 			$(this).removeClass('active');
 		})
-		console.log("-->"+location.pathname.split("/")[1]+"<--");
-    if(location.pathname.split("/")[1]!='') {
+		 if(location.pathname.split("/")[1]!='') {
 	    $('.nav a[href^="/' + location.pathname.split("/")[1] + '"]').parents('li').addClass('active');  
     }
 	});
+</script-->
+<script type="text/javascript">
+  $(document).ready(function(){
+    $('.banner h2').click(function(){
+        document.location.href = $(this).parent('div').find('a').attr('href');
+      })
+  });
 </script>
 

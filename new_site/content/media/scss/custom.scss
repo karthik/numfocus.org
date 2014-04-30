@@ -98,14 +98,13 @@ header {
 			background-color: #fad822;
 		}
 		&:hover {
-			text-decoration: underline;
 			&.grey {
 				color: #000;
-				background-color: #bcc999;
+				background-color: #b9b9b9;
 			}
 			&.yellow {
 				color: #fff;
-				background-color: #fad822;
+				background-color: #f1cc09;
 			}
 		}
 	}
@@ -386,6 +385,7 @@ section.home {
 				padding: 8px 25px 10px 15px;
 				margin: 0;
 				background: rgba(0,0,0, .8);
+				cursor: pointer;
 			}
 		}
 	}
@@ -409,9 +409,15 @@ section.home {
 		}
 		> div {
 			float: left;
-			width: 33%;
+			width: 40%;
 			margin: 0 0 25px 0;
 			text-align: center;
+			&.first {
+				margin-left: 10%;
+			}
+			&.last {
+				margin-right: 10%;
+			}	
 			span {
 				display: block;
 				color: #2366b2;
